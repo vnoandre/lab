@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" width="100" height="100">
+        </div>
+        <div class="menu-toggle">
+            <div class="menu-icon"></div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="quem-sou-eu.html">Quem sou eu</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="spacer"></section>
+
+    <section class="subscribe">
+        <h2>Receba meu contato de especialista</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="tel" id="whatsapp" placeholder="WhatsApp" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="successMessage"></div>
+    </section>
+
+    <section class="slogan">
+        <h2>Conversa inteligente gera resultado</h2>
+    </section>
+
+    <section id="servicos" class="services">
+        <h2>Serviços</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Serviço 1</h3>
+                <p>Descrição do serviço 1</p>
+            </div>
+            <div class="service-box">
+                <h3>Serviço 2</h3>
+                <p>Descrição do serviço 2</p>
+            </div>
+            <div class="service-box">
+                <h3>Serviço 3</h3>
+                <p>Descrição do serviço 3</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 1;
+}
+
+.menu-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #5271ff; /* Cor padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave de cor e transformação */
+    position: relative; /* Mudamos para posicionamento relativo */
+    z-index: 1002; /* Garante que o ícone esteja acima do cabeçalho */
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e outros elementos */
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex; /* Adiciona display flex para alinhar o ícone */
+    align-items: center; /* Alinha verticalmente o ícone com outros elementos */
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu li {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu li a {
+    color: #4f4d5e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #5271ff;
+}
+
+.spacer {
+    height: 100px; /* Altura do menu */
+}
+
+.subscribe {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.subscribe h2 {
+    color: #4f4d5e;
+}
+
+.subscribe input[type="text"],
+.subscribe input[type="email"],
+.subscribe input[type="tel"],
+.subscribe button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    background-color: #5271ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slogan {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.slogan h2 {
+    color: #4f4d5e;
+}
+
+.services {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    color: #4f4d5e;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box h3 {
+    color: #5271ff;
+}
+
+.service-box p {
+    color: #4f4d5e;
+}
+
